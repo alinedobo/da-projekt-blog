@@ -89,7 +89,48 @@ header {
 }
 
 main {
-    min-height: calc(100dvh - 128px - 15dvh);
+    min-height: calc(100dvh - 128px - 10dvh);
+
+    @media screen AND (max-width: 441px) {
+        min-height: calc(100dvh - 88px - 10dvh);
+    }
+}
+
+#cappadocia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > img {
+        object-fit: cover;
+        width: 100%;
+        max-width: 1440px;
+        height: 500px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    #cappadocia-text-box {
+        padding: 3dvh 3dvw;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-yellow);
+        gap: 1dvh;
+
+        h3 {
+            font-family: Arima;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 2rem;
+            color: var(--secondary-brown);
+        }
+
+        p {
+            font-family: Palanquin;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 footer {
