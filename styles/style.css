@@ -1,20 +1,8 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    position: relative;
-    font-size: inherit;
-    color: inherit;
-} */
-
 header {
     width: 100%;
     height: 88px;
-    background-color: var(--primary-green); /* here replace with variable */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--primary-green);
+    align-content: center;
 
     @media screen AND (min-width: 441px) {
         height: 128px;
@@ -28,11 +16,11 @@ header {
         padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
         gap: min(6dvw, 100px);
 
-        @media screen AND (max-width: 767px) {
+        @media screen AND (max-width: 850px) {
             padding: 2dvh 8dvw;
         }
 
-        @media screen AND (max-width: 767px) {
+        @media screen AND (max-width: 440px) {
             justify-content: center;
         }
 
@@ -100,19 +88,30 @@ header {
     }
 }
 
+#cappadocia {
+    background-image: url(./assets/images/landing-page-cappadocia-photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40dvh;
+    width: 100%;
+    padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
 
-#cappadocia{
-    height: 1000px;
+    @media screen AND (max-width: 850px) {
+        padding: 2dvh 8dvw;
+    }
+
+    #cappadocia-right {
+    }
 }
-
 
 footer {
     width: 100%;
     height: 10dvh;
     background-color: var(--primary-green);
     align-content: center;
-    position: fixed;
-    bottom: 0;
+    /*     position: fixed;
+    bottom: 0; */
 
     @media screen AND (max-width: 660px) {
         height: 15dvh;
