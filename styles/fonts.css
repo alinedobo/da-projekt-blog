@@ -106,3 +106,14 @@ p {
   color: var(--secondary-brown);
   font-size: clamp(1rem, 3dvw, 1.5rem);
 }
+
+.carousel-title {
+  font-family: arima;
+  font-weight: 600;
+  color: var(--secondary-brown);
+  font-size: clamp(1.2rem, 3dvw, 1.5rem);
+}
+
+.author-name {
+  color: var(--secondary-brown);
+}
