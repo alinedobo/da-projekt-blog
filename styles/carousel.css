@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  position: relative;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* CONTENT BEGRENZUNG  */
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0;
+  padding: 24px 15px;
+  box-sizing: border-box;
+}
+
+.heading-text {
+  width: 100%;
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+}
+
+.meta-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.card {
+  background-color: #4ea48733;
+  padding: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  max-width: 345px;
+}
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.author-box {
+  padding-top: 20px;
+}
+
+.card p {
+  max-width: 100%;
+  line-height: 1.2;
+}
+
+.card-role {
+  margin: 2px 0 8px;
+}
+
+.card h2 {
+  margin: 0;
+  line-height: 1;
+  font-family: "Arima";
+}
+
+/* CAROUSEL */
+
+.slider_a {
+  position: relative;
+  background-color: black;
+
+  width: 200px;
+  height: 293px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.slider_a input {
+  z-index: 2;
+}
+
+.slider_a_wrapper {
+  width: 500%;
+  height: 100%;
+
+  position: absolute;
+  display: flex;
+
+  transition: all 1s ease-in-out;
+}
+
+.slider_a_element {
+  width: calc(100% / 5);
+  height: 100%;
+}
+
+.element_one {
+  background-color: rgb(0, 255, 34);
+}
+.element_two {
+  background-color: rgb(255, 0, 212);
+}
+.element_three {
+  background-color: rgb(217, 255, 0);
+}
+.element_four {
+  background-color: rgb(255, 0, 13);
+}
+.element_five {
+  background-color: rgb(60, 0, 255);
+}
+
+.slider_a input[value="one"]:checked ~ .slider_a_wrapper {
+  transform: translateX(calc(100% / 5));
+}
+
+.slider_a input[value="two"]:checked ~ .slider_a_wrapper {
+  transform: translateX(0);
+}
+
+.slider_a input[value="three"]:checked ~ .slider_a_wrapper {
+  transform: translateX(calc(100% / 5));
+}
+
+.slider_a input[value="four"]:checked ~ .slider_a_wrapper {
+  transform: translateX(0);
+}
+
+.slider_a input[value="five"]:checked ~ .slider_a_wrapper {
+  transform: translateX(calc(100% / 5));
+}
