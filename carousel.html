@@ -1,18 +1,23 @@
 <!doctype html>
 <html lang="de">
   <head>
-    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/article.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>blog</title>
   </head>
   <body>
     <main>
-      <section class="landing-page">
+      <section class="article-heading">
         <div class="container">
-          <h2>Where the Ocean Meets Your Soul</h2>
-          <h1>The World’s Most Breathtaking Beaches</h1>
-          <p>
+          <h2 class="article-subtitle-font">Where the Ocean Meets Your Soul</h2>
+          <h1 class="article-title-font">
+            The World’s Most Breathtaking Beaches
+          </h1>
+          <p class="heading-text">
             From powder-soft white sands to dramatic coastlines kissed by
             turquoise waves, these beaches are more than destinations — they’re
             feelings.
@@ -20,38 +25,45 @@
           <div class="meta-info">
             <div class="meta-item">
               <img
-                src="./assets/meta_info_icons/calendar_month.png"
-                alt="calender icon"
+                class="calendar-icon"
+                src="./assets/icons/calendar_month.png"
+                alt="calendar icon"
               />
               <span>Date: 26.01.2026</span>
             </div>
             <div class="meta-item">
               <img
-                src="./assets/meta_info_icons/eyeglasses_2.png"
+                class="eyeglasses-icon"
+                src="./assets/icons/eyeglasses_2.png"
                 alt="eyeglasses icon"
               />
               <span>Readng time: 6 min.</span>
             </div>
             <div class="meta-item">
               <img
-                src="./assets/meta_info_icons/visibility.png"
+                class="visibility-icon"
+                src="./assets/icons/visibility.png"
                 alt="visibility icon"
               />
               <span>Read: 164</span>
             </div>
             <div class="meta-item">
-              <img src="./assets/meta_info_icons/share.png" alt="share icon" />
+              <img
+                class="share-icon"
+                src="./assets/icons/share.png"
+                alt="share icon"
+              />
               <span>Shared: 18</span>
             </div>
           </div>
           <div class="author-box">
-            <div class="author-header">
+            <div class="card">
               <img
                 src="./assets/images/Author.png"
                 alt="author profile image"
               />
-              <h2>Tamara Wallker</h2>
-              <h3>Author</h3>
+              <h2 class="author-name">Tamara Wallker</h2>
+              <p class="card-role">Author</p>
               <p>
                 I’ve been traveling since 2017, chasing moments instead of
                 plans. I’m fascinated by snakes, love sharks, would happily
@@ -63,6 +75,37 @@
           </div>
         </div>
       </section>
+      <div class="container">
+        <section class="carousel-section">
+          <h2 class="carousel-title">TOP 5 beach destinations for 2026</h2>
+          <div class="slider_a">
+          <input type="radio" name="slider" value="one" checked />
+          <input type="radio" name="slider" value="two" />
+          <input type="radio" name="slider" value="three" />
+          <input type="radio" name="slider" value="four" />
+          <input type="radio" name="slider" value="five" />
+
+          <div class="slider_a_wrapper">
+            <div class="slider_a_element element_one">
+              <img src="./assets/images/beach_one.png" />
+            </div>
+            <div class="slider_a_element element_two">
+              <img src="./assets/images/beach_two.png" />
+            </div>
+            <div class="slider_a_element element_three">
+              <img src="./assets/images/beach_three.png" />
+            </div>
+            <div class="slider_a_element element_four">
+              <img src="./assets/images/beach_four.png" />
+            </div>
+            <div class="slider_a_element element_five">
+              <img src="./assets/images/beach_five.png" />
+            </div>
+          </div>
+
+          <!-- </div> -->
+        </section>
+      </div>
     </main>
   </body>
 </html>
