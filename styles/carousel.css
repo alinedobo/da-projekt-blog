@@ -29,7 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 }
 
 .meta-item {
@@ -118,21 +118,21 @@
 }
 
 .slider_a input[value="one"]:checked ~ .slider_a_wrapper {
-  transform: translateX(0);
+  transform: translateX(40%);
 }
 
 .slider_a input[value="two"]:checked ~ .slider_a_wrapper {
-  transform: translateX(-20%);
+  transform: translateX(20%);
 }
 
 .slider_a input[value="three"]:checked ~ .slider_a_wrapper {
-  transform: translateX(-40%);
+  transform: translateX(0%);
 }
 
 .slider_a input[value="four"]:checked ~ .slider_a_wrapper {
-  transform: translateX(-40%);
+  transform: translateX(-20%);
 }
 
 .slider_a input[value="five"]:checked ~ .slider_a_wrapper {
-  transform: translateX(-20%);
+  transform: translateX(-40%);
 }
