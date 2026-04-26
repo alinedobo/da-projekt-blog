@@ -88,14 +88,14 @@ header {
     }
 }
 
-main {
-    min-height: calc(200dvh - 128px - 10dvh);
-
-    @media screen AND (max-width: 441px) {
-        min-height: calc(200dvh - 88px - 10dvh);
-    }
+/* main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
+ */
 #cappadocia {
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ main {
 
 /* DO NOT TOUCH CAPPADOCIA ANYMORE */
 
-#highlights{
+#highlights {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,21 +143,108 @@ main {
     gap: 3dvh;
     padding: 3dvh 2dvw;
 
-    > img{
+    > img {
         height: 40px;
         width: 40px;
     }
 
-    #highlights-heading{
+    #highlights-heading {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 3dvw;
     }
 
+    .slider_photos {
+        height: 500px;
+        width: 335px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        overflow: hidden;
+
+        .slider_photos_wrapper {
+            width: 400%;
+            height: 100%;
+
+            position: absolute;
+            display: flex;
+            z-index: 1;
+
+            .slider_photos_element {
+                width: calc(100% / 4);
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                .slider_photos_element_textbox {
+                    width: 90%;
+                    position: absolute;
+                    top: 20%;
+                    z-index: 2;
+                    border-radius: 5px;
+                    background-color: rgba(255, 255, 255, 0.4);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1dvh 1dvw;
+
+                    backdrop-filter: blur(5px) saturate(60%);
+
+                    .slider_photos_element_text {
+                        width: 100%;
+                        padding: 0.5dvh 0.5dvw;
+                        text-align: left-align;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1dvh;
+
+                        .slider_photos_element_text_header {
+                            color: white;
+                            font-family: Palanquin;
+                            font-weight: 400;
+                            font-style: Regular;
+                            font-size: 1.75rem;
+                        }
+
+                        .slider_photos_element_text_description {
+                            color: white;
+                            font-family: Palanquin;
+                            font-weight: 400;
+                            font-style: Regular;
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .slider_photos input {
+        z-index: 2;
+        margin-bottom: 2dvh;
+    }
+
+    .slider_photos input[value="one"]:checked ~ .slider_photos_wrapper {
+        transform: translateX(calc(100% /8 * 3));
+    }
+
+    .slider_photos input[value="two"]:checked ~ .slider_photos_wrapper {
+        transform: translateX(calc(100% /8));
+    }
+
+    .slider_photos input[value="three"]:checked ~ .slider_photos_wrapper {
+        transform: translateX(calc(-100% / 8));
+    }
+    .slider_photos input[value="four"]:checked ~ .slider_photos_wrapper {
+        transform: translateX(calc(-100% / 8 * 3));
+    }
 }
-
-
 
 footer {
     width: 100%;
