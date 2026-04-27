@@ -169,7 +169,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 3dvw;
+        gap: min(3dvw, 20px);
     }
 
     .slider_photos {
@@ -264,6 +264,10 @@ header {
 
 #faq {
 }
+
+
+
+
 
 footer {
     width: 100%;
