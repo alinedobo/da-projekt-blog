@@ -68,7 +68,6 @@
 
 html {
   font-size: 16px;
-  /*     font-family: inherit; */
 
   h2 {
     font-family: Arima;
@@ -89,13 +88,7 @@ html {
 .article-subtitle-font {
   font-family: palanquin;
   font-weight: 600;
-  font-style: semibold;
   color: var(--primary-green);
-  font-size: clamp(1.15rem, 3dvw, 2.5rem);
-  font-family: Palanquin;
-  font-weight: 600;
-  color: var(--primary-green);
-  font-size: clamp(1.25rem, 4dvw, 2.5rem);
 }
 
 .landing-subheading {

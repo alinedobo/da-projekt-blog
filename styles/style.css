@@ -5,11 +5,9 @@ header {
     align-content: center;
 
     @media screen AND (min-width: 441px) {
-    @media screen AND (min-width: 441px) {
         height: 128px;
     }
 
-    #header-content {
     #header-content {
         width: 100%;
         display: flex;
@@ -52,28 +50,28 @@ header {
             color: white;
 
             a {
+                a {
+                    font-family: Arima;
+                    font-weight: 700;
+                    font-style: Bold;
+                    font-size: clamp(1.25rem, 2dvw, 1.5rem);
+                    font-size: clamp(1.25rem, 2dvw, 1.5rem);
+                    text-decoration: none;
+                }
 
-            a {
-                font-family: Arima;
-                font-weight: 700;
-                font-style: Bold;
-                font-size: clamp(1.25rem, 2dvw, 1.5rem);
-                font-size: clamp(1.25rem, 2dvw, 1.5rem);
-                text-decoration: none;
-            }
+                a:visited {
+                    a:visited {
+                        color: var(--primary-yellow);
+                    }
 
-            a:visited {
+                    @media screen AND (max-width: 768px) {
+                        padding: 2dvh 6dvw;
+                    }
 
-            a:visited {
-                color: var(--primary-yellow);
-            }
-
-            @media screen AND (max-width: 768px) {
-                padding: 2dvh 6dvw;
-            }
-
-            @media screen AND (max-width: 440px) {
-                display: none;
+                    @media screen AND (max-width: 440px) {
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -155,7 +153,6 @@ header {
 /* DO NOT TOUCH CAPPADOCIA ANYMORE */
 
 #highlights {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,13 +199,12 @@ header {
                     width: 90%;
                     position: absolute;
                     top: 20%;
-                    z-index: 2;
+                    z-index: 1;
                     border-radius: 5px;
                     background-color: rgba(255, 255, 255, 0.4);
                     display: flex;
                     flex-direction: column;
                     padding: 1dvh 1dvw;
-
                     backdrop-filter: blur(5px) saturate(60%);
 
                     .slider_photos_element_text {
@@ -223,7 +219,6 @@ header {
                             color: white;
                             font-family: Palanquin;
                             font-weight: 400;
-                            font-style: Regular;
                             font-size: 1.75rem;
                         }
 
@@ -231,7 +226,6 @@ header {
                             color: white;
                             font-family: Palanquin;
                             font-weight: 400;
-                            font-style: Regular;
                             font-size: 1.25rem;
                         }
                     }
@@ -246,7 +240,7 @@ header {
     }
 
     .slider_photos input {
-        z-index: 2;
+        z-index: 1;
         margin-bottom: 2dvh;
     }
 
@@ -268,13 +262,8 @@ header {
 
 
 
-#faq{
-
-    
+#faq {
 }
-
-
-
 
 footer {
     width: 100%;
@@ -283,7 +272,8 @@ footer {
     align-content: center;
 
     @media screen AND (max-width: 660px) {
-        height: 15dvh;
+        height: 12dvh;
+        margin-bottom: 88px;
     }
 
     #footer-content {
@@ -296,6 +286,12 @@ footer {
 
         @media screen AND (max-width: 850px) {
             padding: 2dvh 8dvw;
+        }
+
+        @media screen AND (max-width: 380px) {
+            padding: 2dvh 2dvw;
+            gap: 2dvw;
+            align-items: flex-end;
         }
 
         #footer-text {
@@ -349,8 +345,9 @@ footer {
             gap: 1dvw;
 
             @media screen AND (max-width: 380px) {
-                flex-wrap: wrap;
-                justify-content: space-between;
+                img {
+                    transform: scaleY(0.75) scaleX(0.75);
+                }
             }
         }
     }
