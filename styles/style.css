@@ -224,6 +224,7 @@ header {
             }
         }
     }
+
     .slider_photos input {
         z-index: 2;
         margin-bottom: 2dvh;
@@ -252,7 +253,7 @@ footer {
     align-content: center;
 
     @media screen AND (max-width: 660px) {
-        height: 15dvh;
+        height: 12dvh;
         margin-bottom: 88px;
     }
 
