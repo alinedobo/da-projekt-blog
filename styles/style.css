@@ -136,6 +136,7 @@ header {
 /* DO NOT TOUCH CAPPADOCIA ANYMORE */
 
 #highlights {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
