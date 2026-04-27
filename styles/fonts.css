@@ -74,7 +74,7 @@ html {
   font-weight: 700;
   color: var(--primary-yellow);
   font-style: bold;
-  font-size: clamp(2.25rem, 6.5dvw, 4rem);
+  font-size: clamp(2.25rem, 1.5dvw, 4rem);
 }
 
 .article-subtitle-font {
@@ -82,7 +82,7 @@ html {
   font-weight: 600;
   font-style: semibold;
   color: var(--primary-green);
-  font-size: clamp(1.15rem, 4dvw, 2.5rem);
+  font-size: clamp(1.15rem, 3dvw, 2.5rem);
 }
 
 .landing-subheading {
@@ -104,7 +104,7 @@ p {
   font-family: palanquin;
   font-weight: 400;
   color: var(--secondary-brown);
-  font-size: clamp(1rem, 3dvw, 1.5rem);
+  font-size: clamp(1rem, 2dvw, 1.5rem);
 }
 
 .carousel-title {
@@ -116,4 +116,11 @@ p {
 
 .author-name {
   color: var(--secondary-brown);
+}
+
+.share-text {
+  color: var(--secondary-brown);
+  font-family: arima;
+  font-weight: 500;
+  font-size: 18px;
 }
