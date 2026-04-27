@@ -157,7 +157,7 @@ header {
 
     .slider_photos {
         height: 500px;
-        width: 335px;
+        width: min(95%, 335px);
         display: flex;
         justify-content: center;
         align-items: flex-end;
