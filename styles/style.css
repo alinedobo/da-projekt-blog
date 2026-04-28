@@ -60,17 +60,15 @@ header {
         }
 
         a:visited {
-            a:visited {
-                color: var(--primary-yellow);
-            }
+            color: var(--primary-yellow);
+        }
 
-            @media screen AND (max-width: 768px) {
-                padding: 2dvh 6dvw;
-            }
+        @media screen AND (max-width: 768px) {
+            padding: 2dvh 6dvw;
+        }
 
-            @media screen AND (max-width: 440px) {
-                display: none;
-            }
+        @media screen AND (max-width: 440px) {
+            display: none;
         }
     }
 }
