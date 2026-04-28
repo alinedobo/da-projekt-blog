@@ -78,7 +78,7 @@ header {
 }
 
 #mobile-nav-bar {
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: 88px;
     background-color: var(--primary-yellow);
@@ -266,7 +266,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2dvh;
+    gap: 1dvh;
     padding: 2dvh 2dvw;
 
     .section-heading {
@@ -285,6 +285,10 @@ header {
         align-items: center;
         gap: min(2dvh, 20px);
         padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
+
+        @media screen AND (max-width: 850px) {
+            padding: 2dvh 8dvw;
+        }
 
         .faq-box {
             width: 90%;
@@ -308,7 +312,7 @@ header {
                 padding: 5px 5px;
                 border-radius: 5px;
 
-                p{
+                p {
                     font-family: Palanquin;
                     font-weight: 400;
                     font-size: 1rem;
@@ -316,6 +320,54 @@ header {
             }
         }
     }
+}
+
+#contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
+    gap: min(6dvw, 100px);
+
+    @media screen AND (max-width: 850px) {
+        padding: 2dvh 8dvw;
+    }
+    #contact-form-intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1dvh;
+
+        .section-heading {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: min(3dvw, 20px);
+        }
+
+        #contact-form-text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.75dvh;
+
+            p {
+                font-family: Palanquin;
+                font-weight: 500;
+                font-size: clamp(1rem, 1.5dvw, 1.5rem);
+                text-align: center;
+                line-height: 1;
+            }
+        }
+    }
+
+
+    
 }
 
 footer {
