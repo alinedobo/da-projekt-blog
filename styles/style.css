@@ -329,7 +329,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
-    gap: min(6dvw, 100px);
+    gap: 3dvh;
 
     @media screen AND (max-width: 850px) {
         padding: 2dvh 8dvw;
@@ -366,8 +366,49 @@ header {
         }
     }
 
+    #contact-formular {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2dvh;
 
-    
+        #name-and-email {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1dvw;
+        }
+        .input-field {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1dvh;
+
+            label {
+                font-family: Palanquin;
+                font-weight: 500;
+                font-size: clamp(1rem, 1.5dvw, 1.5rem);
+                text-align: left;
+                line-height: 1;
+            }
+        }
+    }
+
+    #privacy-checkbox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1dvw;
+
+/*         label > input {
+            align-content: center;
+            justify-items: center;
+        } */
+    }
 }
 
 footer {
