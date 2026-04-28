@@ -77,6 +77,8 @@ header {
     }
 }
 
+
+
 #mobile-nav-bar {
     z-index: 2;
     width: 100%;
@@ -305,6 +307,7 @@ header {
                 font-family: Palanquin;
                 font-weight: 700;
                 font-size: 1rem;
+                color: var(--secondary-brown);
             }
 
             .faq-answer {
@@ -362,6 +365,7 @@ header {
                 font-size: clamp(1rem, 1.5dvw, 1.5rem);
                 text-align: center;
                 line-height: 1;
+                color: var(--secondary-brown);
             }
         }
     }
@@ -393,6 +397,7 @@ header {
                 font-size: clamp(1rem, 1.5dvw, 1.5rem);
                 text-align: left;
                 line-height: 1;
+                color: var(--secondary-brown);
             }
         }
     }
