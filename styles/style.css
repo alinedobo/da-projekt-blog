@@ -385,6 +385,7 @@ header {
             display: flex;
             flex-direction: column;
             gap: 1dvh;
+            border-bottom: solid gray 1px;
 
             label {
                 font-family: Palanquin;
@@ -404,10 +405,11 @@ header {
         align-items: center;
         gap: 1dvw;
 
-        /*         label > input {
-            align-content: center;
-            justify-items: center;
-        } */
+        .container{
+            width: 13px;
+            height: 13px;
+
+        }
     }
 }
 
