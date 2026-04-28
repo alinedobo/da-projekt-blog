@@ -80,15 +80,15 @@ header {
     background-color: var(--primary-yellow);
     position: fixed;
     bottom: 0;
-    padding: 5dvw 15dvw;
+    padding: 2dvw 1dvw;
     justify-items: center;
     align-content: center;
 
     div {
+        width: 80%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 5dvw;
 
         img {
             height: 40px;
@@ -101,14 +101,6 @@ header {
     }
 }
 
-/* main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
- */
 #cappadocia {
     display: flex;
     flex-direction: column;
@@ -405,10 +397,9 @@ header {
         align-items: center;
         gap: 1dvw;
 
-        .container{
+        .container {
             width: 13px;
             height: 13px;
-
         }
     }
 }
@@ -419,37 +410,40 @@ footer {
     background-color: var(--primary-green);
     align-content: center;
 
-    @media screen AND (max-width: 660px) {
-        height: 12dvh;
+    @media screen AND (max-width: 690px) {
+        height: 18dvh;
+    }
+
+    @media screen AND (max-width: 440px) {
         margin-bottom: 88px;
     }
 
     #footer-content {
-        width: 100%;
+        width: fit-content%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
-        gap: min(6dvw, 100px);
+        padding: 1dvh max((calc(100% - 1440px) / 2), 120px);
 
         @media screen AND (max-width: 850px) {
             padding: 2dvh 8dvw;
-        }
-
-        @media screen AND (max-width: 380px) {
-            padding: 2dvh 2dvw;
-            gap: 2dvw;
             align-items: flex-end;
         }
 
+        @media screen AND (max-width: 380px) {
+            padding: 1dvh 2dvw;
+            gap: 1dvw;
+        }
+
         #footer-text {
-            width: 100%;
+            width: fit-content;
             display: flex;
             justify-content: flex-start;
-            gap: 2dvw;
+            gap: 3dvw;
 
-            @media screen AND (max-width: 660px) {
+            @media screen AND (max-width: 690px) {
                 flex-direction: column;
+                gap: 1dvw;
             }
 
             p {
@@ -458,7 +452,7 @@ footer {
                 color: white;
                 font-size: 1.125rem;
 
-                @media screen AND (max-width: 660px) {
+                @media screen AND (max-width: 690px) {
                     font-size: 1rem;
                 }
             }
@@ -480,17 +474,23 @@ footer {
                 justify-content: flex-start;
                 align-items: center;
                 gap: 1dvw;
-                @media screen AND (max-width: 660px) {
+
+                @media screen AND (max-width: 690px) {
                     order: 1;
                 }
             }
         }
 
         #footer-icons {
+            width: fit-content;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             gap: 1dvw;
+
+            img{
+                height: 32px;
+            }
 
             @media screen AND (max-width: 380px) {
                 img {
