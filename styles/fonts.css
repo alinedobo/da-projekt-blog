@@ -92,10 +92,10 @@ html {
   font-style: semibold;
   color: var(--primary-green);
   font-size: clamp(1.15rem, 3dvw, 2.5rem);
-  font-family: Palanquin;
+  /* font-family: Palanquin;
   font-weight: 600;
   color: var(--primary-green);
-  font-size: clamp(1.25rem, 4dvw, 2.5rem);
+  font-size: clamp(1.25rem, 4dvw, 2.5rem); */
 }
 
 .landing-subheading {
@@ -105,7 +105,7 @@ html {
   font-size: clamp(2.5rem, 3dvw, 2.25rem);
 }
 
-.heading-text {
+.hero-intro-text {
   font-family: palanquin;
   font-weight: 400;
   color: var(--secondary-brown);
@@ -117,22 +117,12 @@ p {
   font-weight: 400;
   color: var(--secondary-brown);
   font-size: clamp(1rem, 2dvw, 1.5rem);
+  line-height: 1;
 }
 
 .carousel-title {
   font-family: arima;
   font-weight: 600;
   color: var(--secondary-brown);
-  font-size: clamp(1.2rem, 3dvw, 1.5rem);
-}
-
-.author-name {
-  color: var(--secondary-brown);
-}
-
-.share-text {
-  color: var(--secondary-brown);
-  font-family: arima;
-  font-weight: 500;
-  font-size: 18px;
+  font-size: clamp(1.1rem, 3dvw, 1.5rem);
 }
