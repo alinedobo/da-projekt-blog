@@ -27,15 +27,12 @@
 }
 
 .hero-intro-text {
-  width: 100%;
-  padding-top: 0.7rem;
-  padding-bottom: 1.5rem;
   line-height: 1;
 }
 
 .article-title-font {
-  font-size: 50px;
-  line-height: 1.1;
+  font-size: 35px;
+  line-height: 1;
 }
 
 .hero-meta {
@@ -98,8 +95,11 @@
 
 /* VIDEO SECTION */
 
-.article-text-top span {
-  font-size: 50px;
+.article-video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
 .article-list-one {
@@ -107,19 +107,9 @@
   padding-top: 0.7rem;
   padding-bottom: 1.5rem;
   line-height: 1;
-  padding: 15px;
-}
-
-.article-list-title {
-  padding-bottom: 30px;
-
-  .list-item {
-    line-height: 1;
-  }
-}
-
-li.list-item {
-  color: var(--secondary-brown);
+  font-family: palanquin;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* PRO-TIPPS SECTION */

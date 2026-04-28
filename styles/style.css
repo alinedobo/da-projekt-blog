@@ -52,28 +52,25 @@ ul {
   color: white;
 
   a {
-    a {
-      font-family: Arima;
-      font-weight: 700;
-      font-style: Bold;
-      font-size: clamp(1.25rem, 2dvw, 1.5rem);
-      font-size: clamp(1.25rem, 2dvw, 1.5rem);
-      text-decoration: none;
-    }
+    font-family: Arima;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: clamp(1.25rem, 2dvw, 1.5rem);
+    font-size: clamp(1.25rem, 2dvw, 1.5rem);
+    text-decoration: none;
+  }
 
-    a:visited {
-      a:visited {
-        color: var(--primary-yellow);
-      }
+  a:visited {
+    color: var(--primary-yellow);
+  }
+}
 
-      @media screen AND (max-width: 768px) {
-        padding: 2dvh 6dvw;
-      }
+  @media screen AND (max-width: 768px) {
+    padding: 2dvh 6dvw;
+  }
 
-      @media screen AND (max-width: 440px) {
-        display: none;
-      }
-    }
+  @media screen AND (max-width: 440px) {
+    display: none;
   }
 }
 
