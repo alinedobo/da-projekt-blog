@@ -102,38 +102,34 @@ header {
 }
 
 #cappadocia {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: aquamarine;
 
-    > img {
-        object-fit: cover;
+    #cappadocia-content {
         width: 100%;
-        max-width: 1440px;
-        height: 500px;
-        max-height: 500px;
-        object-fit: cover;
-    }
+        position: relative;
+        padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
 
-    #cappadocia-text-box {
-        padding: 3dvh 3dvw;
-        display: flex;
-        flex-direction: column;
-        background-color: var(--primary-yellow);
-        gap: 1dvh;
-
-        h3 {
-            font-family: Arima;
-            font-weight: 700;
-            font-style: Bold;
-            font-size: 2rem;
-            color: var(--secondary-brown);
+        @media screen AND (max-width: 850px) {
+            padding: 2dvh 8dvw;
         }
 
-        p {
-            font-family: Palanquin;
-            font-weight: 500;
-            font-size: 1.5rem;
+        cappadocia-text {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--primary-yellow);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
         }
     }
 }
