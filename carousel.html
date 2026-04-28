@@ -3,32 +3,63 @@
   <head>
     <link rel="stylesheet" href="./styles/carousel.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/article.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
+    <!-- <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/style.css" /> -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel blog</title>
   </head>
   <body>
+    <!-- #region header -->
+    <header>
+      <div id="header-content">
+        <img src="./assets/icons/logo.svg" alt="travel blog logo" />
+        <nav>
+          <ul>
+            <a href="#highlights">Highlights</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact-form">Contact</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="mobile-nav-bar">
+      <div>
+        <a href=""><img src="./assets/icons/Home.svg" alt="home icon" /></a>
+        <a href="#highlights"
+          ><img src="./assets/icons/rocket.svg" alt="rocket icon"
+        /></a>
+        <a href="#faq"
+          ><img src="./assets/icons/question-mark.svg" alt="question mark icon"
+        /></a>
+        <a href="#contact-form"
+          ><img src="./assets/icons/person_pin.svg" alt="person pin icon"
+        /></a>
+      </div>
+    </div>
+    <!-- #endregion -->
     <main>
-      <section class="article-heading">
-        <div class="container layout-wrapper">
-          <div class="article-content">
+      <div class="container">
+      <section class="hero-section">
+        <div class="hero-wrapper">
+          <div class="hero-content">
             <h2 class="article-subtitle-font">
               Where the Ocean Meets Your Soul
             </h2>
             <h1 class="article-title-font">
               The World’s Most Breathtaking Beaches
             </h1>
-            <p class="heading-text">
+            <p class="hero-intro-text">
               From powder-soft white sands to dramatic coastlines kissed by
               turquoise waves, these beaches are more than destinations —
               they’re feelings.
             </p>
-            <div class="meta-info">
+            <div class="hero-meta">
               <div class="meta-item">
                 <img
-                  class="calendar-icon"
+                  class="meta-calendar-icon"
                   src="./assets/icons/calendar_month.png"
                   alt="calendar icon"
                 />
@@ -36,7 +67,7 @@
               </div>
               <div class="meta-item">
                 <img
-                  class="eyeglasses-icon"
+                  class="meta-eyeglasses-icon"
                   src="./assets/icons/eyeglasses_2.png"
                   alt="eyeglasses icon"
                 />
@@ -44,7 +75,7 @@
               </div>
               <div class="meta-item">
                 <img
-                  class="visibility-icon"
+                  class="meta-visibility-icon"
                   src="./assets/icons/visibility.png"
                   alt="visibility icon"
                 />
@@ -52,7 +83,7 @@
               </div>
               <div class="meta-item">
                 <img
-                  class="share-icon"
+                  class="meta-share-icon"
                   src="./assets/icons/share.png"
                   alt="share icon"
                 />
@@ -60,14 +91,14 @@
               </div>
             </div>
           </div>
-          <div class="author-box">
-            <div class="card">
+          <div class="hero-author-box">
+            <div class="author-card">
               <img
                 src="./assets/images/Author.png"
                 alt="author profile image"
               />
-              <h2 class="author-name">Tamara Wallker</h2>
-              <p class="card-role">Author</p>
+              <h2 class="author-card-name">Tamara Wallker</h2>
+              <p class="author-card-role">Author</p>
               <p>
                 I’ve been traveling since 2017, chasing moments instead of
                 plans. I’m fascinated by snakes, love sharks, would happily
@@ -77,8 +108,8 @@
               </p>
             </div>
           </div>
-        </div>
       </section>
+      </div>
       <div class="container">
         <section class="carousel-section">
           <h2 class="carousel-title">TOP 5 beach destinations for 2026</h2>
@@ -116,7 +147,7 @@
               <label for="slide5"></label>
             </div>
           </div>
-          <div class="article-carousel">
+          <div class="carousel-article">
             <p>
               Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
               malesuada. Ante in commodo porta scelerisque turpis gravida
@@ -130,38 +161,44 @@
           </div>
         </section>
       </div>
+      <div class="container">
       <section class="article-list">
-        <div class="container">
+        
           <p class="article-list-title">
             Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
             malesuada.:
           </p>
-          <ol class="heading-text">
-            <li>
+          <ol class="article-list-one">
+            <li class="list-item">
               turpis gravida <strong>semper</strong>. Lorem ipsum dolor sit amet
               consectetur. Egestas a enim vestibulum malesuada. Eta scelerisque
               turpis gravida semper.
             </li>
-            <li>
+            <li class="list-item">
               <strong>Lorem ipsum</strong> dolor sit ameta enim vestibulum
               malesuada. Ante intrew commodo porta scelerisque turpis. ipsum
               dolor sit amet consectetur. Egestas a enim vestibulum malesuada.
             </li>
-            <li>
+            <li class="list-item">
               Ante in commodo porta <strong>scelerisque</strong> turpis gravida
               semper.
             </li>
-            <li>
+            <li class="list-item">
               Ipsum dolor sit amet consectetur. Egestas a enim vestibulum
               malesuada. Ante in commodo porta scelerisque turpis gravida
               semper.
             </li>
           </ol>
-        </div>
+        
       </section>
-      <section>
-        <div class="container">
-          <div class="pro-tipps-section heading-text">
+      </div>
+      <div class="container">
+        <section class="pro-tipps-section">
+          <div class="pro-tipps-icon">
+            <img src="./assets/icons/lightbulb-pro-tipps.png" />
+            <p>Pro tipps</p>
+          </div>
+          <div class="pro-tipps-list hero-intro-text">
             <ol>
               <li>
                 Ante in commodo porta scelerisque turpis gravida semper.
@@ -177,11 +214,12 @@
               </li>
             </ol>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      <div class="container">
       <section>
-        <div class="container">
-          <div class="pro-tipps-article-text">
+        
+          <div class="pro-tipps-article">
             <p>
               Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
               malesuada. Ante in commodo porta scelerisque turpis gravida
@@ -198,23 +236,51 @@
               semper.
             </p>
           </div>
-        </div>
+        
       </section>
-      <section class="share-box">
-        <div class="container">
-          <p class="share-text">
-            Follow me for more content like this, and share the article with
-            your friends!
-          </p>
-
-          <div class="share-button">
-            <a href="#" class="share-btn">
-              <img src="./assets/icons/share-bottom.png" />
-              <span>Share</span>
-            </a>
+      </div>
+      <div class="container">
+        <section class="share-box">
+            <p class="share-text">
+              Follow me for more content like this, and share the article with
+              your friends!
+            </p>
+            <img class="share-arrow-icon" src="./assets/icons/arrow-share.svg" />
+            <div class="share-button">
+              <a href="#" class="share-btn">
+                <img src="./assets/icons/share-bottom.png" />
+                <span>Share</span>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
+    <footer>
+      <div id="footer-content">
+        <div id="footer-text">
+          <div id="copyright">
+            <img src="./assets/icons/copyright.svg" alt="copyright icon" />
+            <p>Travel Blog 2026</p>
+          </div>
+          <a href="">Imprint</a>
+          <a href="">Cookie Preferences</a>
+        </div>
+        <div id="footer-icons">
+          <a href="https://www.tiktok.com/login" target="_blank"
+            ><img src="./assets/icons/tiktok-logo.svg" alt="tiktok logo"
+          /></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img src="./assets/icons/youtube-logo.svg" alt="youtube logo"
+          /></a>
+          <a href="https://de-de.facebook.com/" target="_blank"
+            ><img src="./assets/icons/facebook-logo.svg" alt="facebook logo"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="./assets/icons/instagram-logo.svg" alt="instagram logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
