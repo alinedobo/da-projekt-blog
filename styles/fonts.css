@@ -74,7 +74,7 @@ html {
     h1 {
         font-family: Arima;
         font-weight: 700;
-        font-size: clamp(2.5rem, 3.5dvw, 3.75rem);
+        font-size: clamp(1.5rem, 3dvw, 3.75rem);
         color: var(--secondary-brown);
     }
 
@@ -118,7 +118,7 @@ p {
     font-family: palanquin;
     font-weight: 400;
     color: var(--secondary-brown);
-    font-size: clamp(1rem, 2dvw, 1.5rem);
+    font-size: clamp(0.75rem, 2dvw, 1.5rem);
     line-height: 1;
 }
 
