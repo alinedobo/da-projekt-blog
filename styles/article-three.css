@@ -98,58 +98,7 @@ h2.article-subtitle-font {
   font-family: "Arima";
 }
 
-/* VIDEO SECTION */
-
-.article-video-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.article-list-one {
-  width: 100%;
-  padding-top: 0.7rem;
-  padding-bottom: 1.5rem;
-  line-height: 1;
-  font-family: palanquin;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-/* PRO-TIPPS SECTION */
-
-.useful-link {
-  color: var(--primary-green);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.pro-tipps-list {
-  width: 100%;
-  background-color: #4ea48733;
-  border-radius: 40px;
-  box-sizing: border-box;
-  padding: 20px 24px;
-}
-
-.pro-tipps-icon {
-  display: flex;
-  background-color: var(--primary-green);
-  border-radius: 10px;
-  width: 196px;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  transform: rotate(-10deg);
-}
-
-.pro-tipps-icon p {
-  color: var(--primary-yellow);
-  font-family: palanquin;
-  font-weight: 700;
-  font-size: 28px;
-}
+/* ARTICLE AND GRAPHS */
 
 /* SHARE SECTION */
 

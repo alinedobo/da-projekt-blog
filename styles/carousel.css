@@ -13,12 +13,23 @@
 .container {
   width: 100%;
   max-width: 1440px;
-  margin: 0;
+  margin: 0 auto;
   padding: 24px 15px;
   box-sizing: border-box;
 }
 
 /* HERO SECTION */
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h2.article-subtitle-font {
+  line-height: 1;
+  font-size: 16px;
+}
 
 .hero-content {
   display: flex;
@@ -50,17 +61,20 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  font-family: palanquin;
+  color: var(--secondary-brown);
   font-size: 14px;
 }
 
 .hero-author-box {
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .author-card {
   background-color: #4ea48733;
   padding: 18px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +97,12 @@
 
 .author-card-role {
   margin: 2px 0 8px;
+  font-size: 18px;
+  color: var(--secondary-brown);
+}
+
+.author-card-text {
+  color: var(--secondary-brown);
 }
 
 .author-card-name {
@@ -114,6 +134,7 @@
   justify-content: center;
   align-items: flex-end;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .slider_a input {
@@ -166,7 +187,7 @@
 .slider_dots {
   position: absolute;
   left: 50%;
-  bottom: -20px;
+  bottom: 0;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
@@ -189,22 +210,18 @@
 
 .article-list-one {
   width: 100%;
-  padding-top: 0.7rem;
-  padding-bottom: 1.5rem;
   line-height: 1;
   padding: 15px;
 }
 
 .article-list-title {
   padding-bottom: 30px;
-
-  .list-item {
-    line-height: 1;
-  }
 }
 
 li.list-item {
-  color: var(--secondary-brown);
+  font-family: palanquin;
+  color: #3d3d3d;
+  font-size: 1rem;
 }
 
 /* PRO-TIPPS SECTION */
@@ -217,10 +234,13 @@ li.list-item {
 
 .pro-tipps-list {
   width: 100%;
+  line-height: 1.2;
+  font-family: palanquin;
+  color: #3d3d3d;
   background-color: #4ea48733;
   border-radius: 40px;
   box-sizing: border-box;
-  padding: 20px 24px;
+  padding: 20px 32px;
 }
 
 .pro-tipps-icon {
@@ -267,6 +287,7 @@ li.list-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .share-btn span {
@@ -276,9 +297,8 @@ li.list-item {
 }
 
 .share-box {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .share-text {
@@ -287,36 +307,138 @@ li.list-item {
   font-size: 14px;
   font-weight: 500;
   text-align: center;
-}
-
-.share-arrow-icon {
-  position: absolute;
-  bottom: 40px;
-  width: 50px;
-  height: 30px;
+  padding-bottom: 8px;
 }
 
 /* MEDIA QUERIES */
 
-/* @media (min-width: 769px) {
-  .hero-wrapper {
+@media (min-width: 768px) {
+  .container {
+    padding: 16px 32px 0px 32px;
+  }
+  .hero-section .container {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .author-card {
-    width: 250px;
-    padding: 10px;
-  }
-
-  .hero-author-box {
-    padding-top: 0;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 32px;
   }
 
   .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 30px;
   }
-} */
+
+  .hero-author-box {
+    width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .author-card {
+    width: 100%;
+    max-width: 240px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .author-card p {
+    line-height: 1;
+  }
+
+  .hero-meta {
+    gap: 10px;
+  }
+
+  .meta-item {
+    font-size: 12px;
+  }
+
+  h2.article-subtitle-font {
+    font-size: 25px;
+  }
+
+  .pro-tipps-icon {
+    width: 170px;
+    height: 56px;
+  }
+
+  .pro-tipps-list {
+    width: auto;
+  }
+
+  .pro-tipps-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .article-list-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+  }
+
+  .share-box {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 64px 128px 0px 128px;
+  }
+
+  h2.article-subtitle-font {
+    font-size: 40px;
+    padding-bottom: 16px;
+  }
+
+  h1.article-title-font {
+    font-size: 64px;
+  }
+
+  p.hero-intro-text {
+    font-size: 32px;
+  }
+
+  .meta-item {
+    font-size: 16px;
+  }
+
+  .author-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    gap: 0;
+  }
+
+  li.list-item {
+    font-size: 24px;
+  }
+
+  .pro-tipps-list {
+    padding-left: 48px;
+    font-size: 24px;
+  }
+
+  .share-box {
+    width: 700px;
+  }
+  .share-text {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 605px) {
+  h2.article-subtitle-font {
+    font-size: 24px;
+  }
+}
