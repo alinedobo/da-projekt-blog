@@ -51,28 +51,24 @@ header {
         color: white;
 
         a {
-            a {
-                font-family: Arima;
-                font-weight: 700;
-                font-style: Bold;
-                font-size: clamp(1.25rem, 2dvw, 1.5rem);
-                font-size: clamp(1.25rem, 2dvw, 1.5rem);
-                text-decoration: none;
-            }
+            font-family: Arima;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: clamp(1.25rem, 2dvw, 1.5rem);
+            font-size: clamp(1.25rem, 2dvw, 1.5rem);
+            text-decoration: none;
+        }
 
-            a:visited {
-                a:visited {
-                    color: var(--primary-yellow);
-                }
+        a:visited {
+            color: var(--primary-yellow);
+        }
 
-                @media screen AND (max-width: 768px) {
-                    padding: 2dvh 6dvw;
-                }
+        @media screen AND (max-width: 768px) {
+            padding: 2dvh 6dvw;
+        }
 
-                @media screen AND (max-width: 440px) {
-                    display: none;
-                }
-            }
+        @media screen AND (max-width: 440px) {
+            display: none;
         }
     }
 }
@@ -84,15 +80,15 @@ header {
     background-color: var(--primary-yellow);
     position: fixed;
     bottom: 0;
-    padding: 5dvw 15dvw;
+    padding: 2dvw 1dvw;
     justify-items: center;
     align-content: center;
 
     div {
+        width: 80%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 5dvw;
 
         img {
             height: 40px;
@@ -105,52 +101,57 @@ header {
     }
 }
 
-/* main {
+#cappadocia {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
- */
-#cappadocia {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    > img {
-        object-fit: cover;
+    #cappadocia-content {
+        height: 70dhv;
         width: 100%;
-        max-width: 1440px;
-        height: 500px;
-        max-height: 500px;
-        object-fit: cover;
-    }
+        position: relative;
+        padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
 
-    #cappadocia-text-box {
-        padding: 3dvh 3dvw;
-        display: flex;
-        flex-direction: column;
-        background-color: var(--primary-yellow);
-        gap: 1dvh;
-
-        h3 {
-            font-family: Arima;
-            font-weight: 700;
-            font-style: Bold;
-            font-size: 2rem;
-            color: var(--secondary-brown);
+        @media screen AND (max-width: 850px) {
+            padding: 2dvh 8dvw;
         }
 
-        p {
-            font-family: Palanquin;
-            font-weight: 500;
-            font-size: 1.5rem;
+        img {
+            height: 70dvh;
+            width: 100%;
+            object-fit: cover;
+            max-width: 1440px;
+        }
+
+        #cappadocia-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--primary-yellow);
+            position: absolute;
+            top: 5dvh;
+            left: 12dvw;
+            z-index: 1;
+            border-radius: 5px;
+            padding: 2dvh 2dvw;
+
+            @media screen AND (min-width: 850px) {
+                position: absolute;
+                left: calc(((100% - 850px) / 2) + 120px);
+                max-width: 720px;
+            }
+
+            @media screen AND (min-width: 1280px) {
+                position: absolute;
+                left: calc(((100% - 1280px) / 2) + 120px);
+                max-width: 720px;
+            }
         }
     }
 }
-
-/* DO NOT TOUCH CAPPADOCIA ANYMORE */
 
 #highlights {
     display: flex;
@@ -306,6 +307,7 @@ header {
                 font-weight: 700;
                 font-size: 1rem;
                 color: var(--secondary-brown);
+                cursor: pointer;
             }
 
             .faq-answer {
@@ -327,14 +329,15 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
-    gap: 3dvh;
+    padding: 5dvh max((calc(100% - 1440px) / 2), 120px);
+    gap: 4dvh;
 
     @media screen AND (max-width: 850px) {
-        padding: 2dvh 8dvw;
+        padding: 5dvh 8dvw;
     }
+
     #contact-form-intro {
         width: 100%;
         display: flex;
@@ -373,22 +376,45 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 2dvh;
 
         #name-and-email {
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             gap: 1dvw;
+
+            @media screen AND (max-width: 440px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
 
-        .input-field {
+        .input-field-top {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 1dvh;
+            border-bottom: solid gray 1px;
+
+            label {
+                font-family: Palanquin;
+                font-weight: 500;
+                font-size: clamp(1rem, 1.5dvw, 1.5rem);
+                text-align: left;
+                line-height: 1;
+                color: var(--secondary-brown);
+            }
+        }
+
+        .input-field-bottom {
             width: 100%;
             display: flex;
             flex-direction: column;
             gap: 1dvh;
+            border-bottom: solid gray 1px;
 
             label {
                 font-family: Palanquin;
@@ -406,12 +432,41 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1dvw;
+        gap: min(2dvw, 20px);
 
-        /*         label > input {
-            align-content: center;
-            justify-items: center;
-        } */
+        .container {
+            width: 13px;
+            height: 13px;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+        a:hover {
+            font-weight: bold;
+        }
+    }
+
+    #send-button {
+        width: 25dvw;
+        max-width: 100px;
+        height: 5dvh;
+        text-align: center;
+        align-content: center;
+        background-color: var(--primary-green);
+        border-radius: 40px;
+
+        a {
+            font-family: Arima;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: clamp(1rem, 1.5dvw, 1.5rem);
+            color: white;
+        }
+
+        a:hover {
+            color: var(--primary-yellow);
+        }
     }
 }
 
@@ -421,37 +476,40 @@ footer {
     background-color: var(--primary-green);
     align-content: center;
 
-    @media screen AND (max-width: 660px) {
-        height: 12dvh;
+    @media screen AND (max-width: 690px) {
+        height: 18dvh;
+    }
+
+    @media screen AND (max-width: 440px) {
         margin-bottom: 88px;
     }
 
     #footer-content {
-        width: 100%;
+        width: fit-content%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2dvh max((calc(100% - 1440px) / 2), 120px);
-        gap: min(6dvw, 100px);
+        padding: 1dvh max((calc(100% - 1440px) / 2), 120px);
 
         @media screen AND (max-width: 850px) {
             padding: 2dvh 8dvw;
-        }
-
-        @media screen AND (max-width: 380px) {
-            padding: 2dvh 2dvw;
-            gap: 2dvw;
             align-items: flex-end;
         }
 
+        @media screen AND (max-width: 380px) {
+            padding: 1dvh 2dvw;
+            gap: 1dvw;
+        }
+
         #footer-text {
-            width: 100%;
+            width: fit-content;
             display: flex;
             justify-content: flex-start;
-            gap: 2dvw;
+            gap: 3dvw;
 
-            @media screen AND (max-width: 660px) {
+            @media screen AND (max-width: 690px) {
                 flex-direction: column;
+                gap: 1dvw;
             }
 
             p {
@@ -460,7 +518,7 @@ footer {
                 color: white;
                 font-size: 1.125rem;
 
-                @media screen AND (max-width: 660px) {
+                @media screen AND (max-width: 690px) {
                     font-size: 1rem;
                 }
             }
@@ -482,17 +540,23 @@ footer {
                 justify-content: flex-start;
                 align-items: center;
                 gap: 1dvw;
-                @media screen AND (max-width: 660px) {
+
+                @media screen AND (max-width: 690px) {
                     order: 1;
                 }
             }
         }
 
         #footer-icons {
+            width: fit-content;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             gap: 1dvw;
+
+            img {
+                height: 32px;
+            }
 
             @media screen AND (max-width: 380px) {
                 img {
