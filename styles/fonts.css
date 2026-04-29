@@ -110,7 +110,7 @@ html {
   font-family: palanquin;
   font-weight: 400;
   color: var(--secondary-brown);
-  font-size: clamp(1rem, 3dvw, 1.75rem);
+  font-size: clamp(1rem, 2dvw, 1.5rem);
 }
 
 p {

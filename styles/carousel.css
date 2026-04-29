@@ -424,6 +424,16 @@ li.list-item {
     font-size: 24px;
   }
 
+  .carousel-article p {
+    font-size: 24px;
+  }
+  p.article-list-title {
+    font-size: 24px;
+  }
+  .pro-tipps-article p {
+    font-size: 24px;
+  }
+
   .pro-tipps-list {
     padding-left: 48px;
     font-size: 24px;
